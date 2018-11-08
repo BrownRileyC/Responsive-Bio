@@ -1,6 +1,5 @@
 * {
     box-sizing: border-box;
-
 }
 body {
     background-image: url(../light-grey-terrazzo.png);
@@ -9,6 +8,13 @@ body {
     line-height: 2;
     position: relative;
 }
+.header {
+    color: #4aaaa5;
+    font-size: 2em;
+    font-weight: bolder;
+    font-family: "Georgia",'Times New Roman', Times, serif;
+}
+
 .container {
     width: 100%;
     background: white;
@@ -18,10 +24,9 @@ body {
     margin-bottom: 20px;
 }
 
-.col-main {
+.col-lg-main {
     width: 960px;
-    margin: 0 auto;
-    
+    margin: 0 auto; 
 }
 
 .col-name {
@@ -52,7 +57,6 @@ body {
     height: 78px;
     float: left;
     background: #ffffff
-    
 }
 
 .col-button {
@@ -67,6 +71,7 @@ body {
 
 .col-content {
     Width: 98%;
+    margin: 0 auto;
 }
 
 footer {
@@ -94,10 +99,16 @@ footer {
     border-width: 1px;
 }
 
+a:visited, a:link, a:hover, a:focus {
+    text-decoration: none;
+    color: #777777
+}
+
 @media screen and (max-width: 980px) {
     .col-main {
         width: 98%;
     }
+}
 
 @media screen and (max-width: 768px) {
     .col-full {
@@ -139,4 +150,11 @@ footer {
     .col-s-main {
         width: 91%;
     }
+    .col-main {
+        margin-bottom: 20;
+        width: 100%;
+    }
+    .spacer-top {
+        margin-bottom: 98;
+    }   
 }
