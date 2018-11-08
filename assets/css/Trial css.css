@@ -1,0 +1,142 @@
+* {
+    box-sizing: border-box;
+
+}
+body {
+    background-image: url(../light-grey-terrazzo.png);
+    color: #777777;
+    font-size: 14px;
+    line-height: 2;
+    position: relative;
+}
+.container {
+    width: 100%;
+    background: white;
+    height: 78px;
+}
+.spacer {
+    margin-bottom: 20px;
+}
+
+.col-main {
+    width: 960px;
+    margin: 0 auto;
+    
+}
+
+.col-name {
+    color: #ffffff;
+    background-color: #4aaaa5;
+    font-size: 2em;
+    font-weight:bolder;
+    font-family: 'Georgia', 'Times New Roman', Times, serif;
+    width: 33%;
+    height: 78px;
+    background: #4aaaa5;
+    float: left;
+    padding-top: 11;
+    padding-bottom: 11; 
+    text-align: center;
+}
+
+.col-top-empty {
+    Width: 27%;
+    height: 78px;
+    float: left;
+    padding-top: 11;
+    padding-bottom: 11;
+}
+
+.col-button-bar {
+    width: 40%;
+    height: 78px;
+    float: left;
+    background: #ffffff
+    
+}
+
+.col-button {
+    font-size: 1.25em;
+    width: 33%;
+    float: left;
+    height: 78px;
+    text-align: center;
+    padding-top: 21.8;
+    padding-bottom: 21.8;
+}
+
+.col-content {
+    Width: 98%;
+}
+
+footer {
+    background-color: #666666;
+    border-top-color: #4aaaa5;
+    border-top-style: solid;
+    border-top-width: 5px;
+    height: 45px;
+    width: 100%;
+    text-align: center;
+    color: #7f7f7f;
+    position: absolute;
+    bottom: 0;
+}
+
+.border-bottom {
+    border-bottom: #666666;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+}
+
+.border {
+    border: #666666;
+    border-style: solid;
+    border-width: 1px;
+}
+
+@media screen and (max-width: 980px) {
+    .col-main {
+        width: 98%;
+    }
+
+@media screen and (max-width: 768px) {
+    .col-full {
+        Width: 100%;
+    }
+    .col-name {
+        Width: 33%;
+    }
+    .col-top-empty {
+        width: 27%;
+    }
+    .col-button-bar {
+        Width: 40%;
+    }
+    .col-button {
+        width: 33%;
+    }
+    .col-main {
+        width: 98%;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .col-full {
+        width: 100%;
+    }
+    .col-name {
+        width: 100%;
+    }
+    .col-button-bar {
+        Width: 100%;
+    }
+    .col-button {
+        width: 33%;
+    }
+    .col-top-empty {
+        display: none;
+    }
+    .col-s-main {
+        width: 91%;
+    }
+}
