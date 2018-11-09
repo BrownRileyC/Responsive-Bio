@@ -32,9 +32,13 @@ body {
     width: 960px;
     margin: 0 auto; 
 }
-.col-main {
+.wrapper-lg {
     width: 960px;
-    margin: 0 auto; 
+    margin: 0 auto;
+}
+.col-main {
+    width: 60%;
+    margin: 0 auto 0 0; 
     overflow: auto;
 }
 
@@ -158,8 +162,11 @@ a:visited, a:link, a:hover, a:focus {
 }
 
 @media screen and (max-width: 980px) {
-    .col-main {
-        width: 98%;
+    .col-name {
+        width: 20%;
+    }
+    .col-top-empty {
+        width: 40%;
     }
     .push {
         height: 45px;
@@ -171,8 +178,27 @@ a:visited, a:link, a:hover, a:focus {
         position: relative;
     }
 }
-
+@media screen and (max-width: 1920px) {
+    .col-name {
+        width: 20%;
+    }
+    .col-top-empty {
+        width: 40%;
+    }
+    .push {
+        height: 45px;
+    }   
+    .col-content {
+        width: 45%;
+        margin: 20px 2.5% 20px 2.5%;
+        float: left;
+        position: relative;
+    }
+}
 @media screen and (max-width: 768px) {
+    .wrapper-lg {
+        width: 100%;
+    }
     .col-full {
         Width: 100%;
     }
@@ -190,6 +216,7 @@ a:visited, a:link, a:hover, a:focus {
     }
     .col-main {
         width: 98%;
+        margin: 0 auto;
     }
     .col-main-top {
         width: 98%;
@@ -208,7 +235,6 @@ a:visited, a:link, a:hover, a:focus {
 @media screen and (max-width: 640px) {
     .col-full {
         width: 100%;
-        
     }
     .col-name {
         width: 100%;
@@ -249,5 +275,6 @@ a:visited, a:link, a:hover, a:focus {
         width: 98%;
         margin: 20px auto 20px auto;
         position: relative;
+        float: none;
     }
 }
