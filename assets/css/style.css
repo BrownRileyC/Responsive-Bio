@@ -1,4 +1,3 @@
-/* Index and cross file Ids */
 * {
     box-sizing: border-box;
 }
@@ -9,106 +8,97 @@ body {
     line-height: 2;
     position: relative;
 }
-/* Add another div of desired width, that way it will always be the right size */
-.topBar {
-    background-color: #ffffff;
-    Width: 100%;
+.header {
+    color: #4aaaa5;
+    font-size: 2em;
+    font-weight: bolder;
+    font-family: "Georgia",'Times New Roman', Times, serif;
+}
+
+.header-content {
+    font-size: 1.5em;
+}
+
+.container {
+    width: 100%;
+    background: white;
     height: 78px;
-    border-bottom: 2px;
-    border-bottom-style: solid;
-    border-bottom-color: #cccccc;
-    text-align: center;
-    margin-bottom: 40px;
-    position: relative;
+}
+.spacer {
+    margin-bottom: 20px;
 }
 
-.col-button-bar {
-    /* Width: 960px; */
-    /* margin: 0 auto; */
-    display: inline-block;
-    position: absolute;
-    z-index: 2;
+.col-main-top {
+    width: 960px;
+    margin: 0 auto; 
+}
+.wrapper-lg {
+    width: 960px;
+    margin: 0 auto;
+}
+.col-main {
+    width: 60%;
+    margin: 0 auto 0 0; 
+    overflow: auto;
 }
 
-.col-top-empty {
-    position: absolute;
-    z-index: 2;
-}
-
-.myName {
+.col-name {
     color: #ffffff;
     background-color: #4aaaa5;
     font-size: 2em;
     font-weight:bolder;
     font-family: 'Georgia', 'Times New Roman', Times, serif;
-    width: 320px;
+    width: 33%;
     height: 78px;
-    padding: auto;
-    line-height: 78px;
+    background: #4aaaa5;
+    float: left;
+    padding-top: 11;
+    padding-bottom: 11; 
     text-align: center;
 }
 
-/* These could be a class instead of ids I believe */
-#about {
-    font-size: 1.25em;
-    Width: 80px;
-    
-}
-
-.portfolio {
-    font-size: 1.25em;
-    Width: 80px;
-    
-}
-
-.contact {
-    Width: 80px;
-    font-size: 1.25em;
-    
-}
-
-.main {
-    Width: 956px;
-    margin: 0 auto;
-    background-color: #ffffff;
-    border-color: #dddddd;
-    border-style: solid;
-    border-width: 2px;
-    margin-bottom: 50px;
-    overflow: auto;
-
-}
-
-.mainHeader {
-    color: #4aaaa5;
-    font-size: 2em;
-    font-weight:bolder;
-    font-family: "Georgia",'Times New Roman', Times, serif;
-    width: 900px;
-    margin-left: 28px;
-    margin-right: 28px;
-}
-
-.bioImage {
+.col-top-empty {
+    Width: 27%;
+    height: 78px;
     float: left;
-    margin: auto 15px 15px 28px;
-    height: 210px;
-    width: 262px;
-    
+    padding-top: 11;
+    padding-bottom: 11;
 }
 
-.myImage {
-    height: 210px;
-    width: 262px;
-    transform: rotate(180deg)  
+.col-button-bar {
+    width: 40%;
+    height: 78px;
+    float: left;
+    background: #ffffff
 }
 
-.bioText {
-    font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
-    width: 900px;
-    margin-left: 28px;
-    margin-right: 28px;
+.col-button {
+    font-size: 1.25em;
+    width: 33%;
+    float: left;
+    height: 78px;
+    text-align: center;
+    padding-top: 21.8;
+    padding-bottom: 21.8;
 }
+
+.col-content-lg {
+    Width: 98%;
+    margin: 20px auto 20px auto;
+    position:relative;
+}
+
+.col-content-lg-tall {
+    height: 175px;
+    width: 98%;
+}
+
+.push {
+    height: 45px;
+    clear: both;
+}
+
+
 footer {
     background-color: #666666;
     border-top-color: #4aaaa5;
@@ -119,112 +109,96 @@ footer {
     text-align: center;
     color: #7f7f7f;
     position: absolute;
-    bottom: 0;
-}
-/* Contact Ids */
-.info {
-    width: 900px;
-    margin-left: 28px;
-    margin-right: 28px;
-}
-h2 {
-    font-size: 1.25em;
-    font-weight: bold;
+    bottom: -20px;
 }
 
-.nameBox{
-    width: 900px;
-    height: 35px;
-    line-height: 35px;
+.border-bottom {
+    border-bottom: #666666;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
 }
 
-.emailBox {
-    width: 900px;
-    height: 35px;
-    line-height: 35px;
-}
-
-.messageBox{
-    width: 900px;
-    height: 200px;
-    line-height: 35px;
-}
-
-.submitButton {
-    width: 115px;
-    height: 40px;
-    margin-top: 20px;
-    margin-left: 28px;
-    margin-bottom: 30px;
-    background-color: #4aaaa5;
-    color: #ffffff;
-    text-align: center;
-    line-height: 40px;
-    font-size: 1.25em;
-    font-weight: bolder;  
-}
-
-/* portfolio ids */
-.projectImage1 { 
-    float: left;
-    margin-left: 28px; 
-    margin-right: 28px;
-    position: relative;
-}
-
-.projectImage2 {
-    display:inline-block;
-    position: relative;
-    
-}
-
-.projectImage3 {
-    float: left;
-    clear: both;
-    margin-left: 28px; 
-    margin-right: 28px;
-    position: relative;
-    
-}
-
-.projectImage4 {
-    display:inline-block;
-    position: relative;
-}
-
-.projectImage5 {
-    float: left;
-    clear: both;
-    margin-left: 28px; 
-    margin-right: 28px;
-    position: relative;
-    
-}
-
-.projectImages {
-        height: 210px;
-        width: 275px;
-}
-
-.projectTitle {
-    text-align: center;
-    font-size: 1.5em;
-    height: 60px;
-    width: 275px;
-    background-color: #4aaaa5;
-    color: #ffffff;
-    line-height: 60px;
-    position: absolute;
-    bottom:20px;
+.border {
+    border: #666666;
+    border-style: solid;
+    border-width: 1px;
 }
 
 a:visited, a:link, a:hover, a:focus {
     text-decoration: none;
     color: #777777
 }
+.myImage {
+    height: auto;
+    width: 25%;
+    float: left;
+    padding: 2%;
+}
 
-/* Media Queries */
+.button {
+    background-color: #4aaaa5;
+    color: #ffffff;
+    width: 15%;
+    margin: 20px;
+    margin-left: 0; 
+    text-align: center;
+}
+
+.projectImages {
+    width: 100%;
+    height: auto;
+}
+
+.projectTitle {
+    width: 100%;
+    height: 50px;
+    color: #ffffff;
+    background-color: #4aaaa5;
+    font-size: 25px;
+    font-family: 'Georgia', 'Times New Roman', Times, serif;
+    text-align: center;
+    position: absolute;
+    bottom: 20%;
+}
+
 @media screen and (max-width: 980px) {
+    .col-name {
+        width: 20%;
+    }
+    .col-top-empty {
+        width: 40%;
+    }
+    .push {
+        height: 45px;
+    }   
+    .col-content {
+        width: 45%;
+        margin: 20px 2.5% 20px 2.5%;
+        float: left;
+        position: relative;
+    }
+}
+@media screen and (max-width: 1920px) {
+    .col-name {
+        width: 20%;
+    }
+    .col-top-empty {
+        width: 40%;
+    }
+    .push {
+        height: 45px;
+    }   
+    .col-content {
+        width: 45%;
+        margin: 20px 2.5% 20px 2.5%;
+        float: left;
+        position: relative;
+    }
+}
+@media screen and (max-width: 768px) {
+    .wrapper-lg {
+        width: 100%;
+    }
     .col-full {
         Width: 100%;
     }
@@ -242,10 +216,20 @@ a:visited, a:link, a:hover, a:focus {
     }
     .col-main {
         width: 98%;
+        margin: 0 auto;
     }
-
-@media screen and (max-width: 768px) {
-    
+    .col-main-top {
+        width: 98%;
+    }
+    .push { 
+        height: 45px;
+    }
+    .col-content {
+        width: 45%;
+        margin: 20px 2.5% 20px 2.5%;
+        float: left;
+        position: relative;
+    }
 }
 
 @media screen and (max-width: 640px) {
@@ -261,7 +245,37 @@ a:visited, a:link, a:hover, a:focus {
     .col-button {
         width: 33%;
     }
-    .col-main {
+    .col-top-empty {
+        display: none;
+    }
+    .col-s-main {
         width: 91%;
+        margin: 0 auto;
+    }
+    .col-main-top {
+        width: 100%;
+    }
+    .spacer-top {
+        margin-bottom: 98;
+    }
+    .push {
+        height: 45px;
+    }
+    .myImage {
+        float: none;
+        display: block;
+        margin: 0 auto;
+        width: 40%;
+    }
+    .projectImages {
+        width: 100%;
+        height: auto;
+        float: none;
+    }
+    .col-content {
+        width: 98%;
+        margin: 20px auto 20px auto;
+        position: relative;
+        float: none;
     }
 }
